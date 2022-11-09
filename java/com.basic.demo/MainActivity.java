@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
     int SMS_REQ=101;
     Button btnnext,btnphonereq,btnsmsreq;
 
+    
+    //this method is called if permission accept or denie 
+    //grantresult has if accept or not
+    //if user grant altleast on permission then grant[] is not empty so we need to check only first element [0]=permission granted
+    //similary
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
